@@ -44,10 +44,11 @@ namespace Appcharge.PaymentLinks {
                     break;
                     #endif
                     #if UNITY_WEBGL
-                    case RuntimePlatform.WebGLPlayer:
+                case RuntimePlatform.WebGLPlayer:
                     _currentPlatform = new WebGLPlatform();
-                    #endif
                     break;
+                    #endif
+                    
                 case RuntimePlatform.WindowsEditor:
                 case RuntimePlatform.OSXEditor:
                 case RuntimePlatform.LinuxEditor:
